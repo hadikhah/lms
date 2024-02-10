@@ -1,4 +1,4 @@
-body {
+body, html {
     direction: ltr !important;
 }
 
@@ -111,64 +111,84 @@ body {
     border-left: 1px solid #e2e7ea;
     padding: 0 10px 0 27px !important;
 }
-.study-mode{
+
+.study-mode {
     left: unset !important;
     right: 40px;
 }
+
 .episodes-list-group-head::before {
     left: 7px !important;
     right: unset !important;
 }
+
 .episodes-list-group-head .head-left::before {
     left: -4px !important;
 }
-.episodes-list-details .detail-type{
+
+.episodes-list-details .detail-type {
     margin-left: unset !important;
     margin-right: 5px;
 }
-.episodes-list-details .detail-download{
+
+.episodes-list-details .detail-download {
     padding-left: 15px;
     padding-right: unset !important;
 }
-.comments .comment-header-detail{
+
+.comments .comment-header-detail {
     margin-right: unset !important;
     margin-left: 20px;
 }
-.txt{
-    text-align: left !important;
-}.txt.txt-l::placeholder{
-    text-align: left !important;
-}.txt::placeholder{
+
+.txt {
     text-align: left !important;
 }
+
+.txt.txt-l::placeholder {
+    text-align: left !important;
+}
+
+.txt::placeholder {
+    text-align: left !important;
+}
+
 .bt-accrdion .bt-accrdion-li::before {
     left: unset !important;
     right: 30px;
-}.bt-accrdion .bt-accrdion-li::after {
+}
+
+.bt-accrdion .bt-accrdion-li::after {
     left: unset !important;
     right: 34px;
 }
-.user-menu-account{
+
+.user-menu-account {
     margin-right: unset !important;
     padding: 0 30px 0 0 !important;
 }
-.user-menu-account .user-image{
+
+.user-menu-account .user-image {
     margin-left: unset !important;
     margin-right: 8px !important;
 
 }
+
 .user-menu-account-dropdown ul li::before {
     margin-left: unset !important;
     margin-right: 8px !important;
 
 }
+
 .user-menu-account::before {
     left: unset !important;
     right: 0;
 }
+
 .pagination a.pg-prev::before {
     transform: rotate(-180deg);
 }
+
 .pagination a.pg-next::before {
     transform: scaleX(1) !important;
 }
