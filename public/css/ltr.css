@@ -2,6 +2,16 @@ body, html {
     direction: ltr !important;
 }
 
+.activation-code > span {
+    position: absolute;
+    display: block;
+    font-size: 13px;
+    color: #ccc;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
 .t-header-logo {
     margin-left: unset !important;
     margin-right: 24px !important;
