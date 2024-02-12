@@ -1,52 +1,111 @@
 <?php
+
 namespace Modules\Category\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Modules\Category\Http\Requests\CategoryRequest;
 use Modules\Category\Models\Category;
-use Modules\Category\Repositories\CategoryRepo;
+use Modules\Category\Repositories\CategoryRepositoryInterface;
 use Modules\Common\Responses\AjaxResponses;
 
 class CategoryController extends Controller
 {
-    public $repo;
-    public function __construct(CategoryRepo $categoryRepo)
+    public CategoryRepositoryInterface $categoryRepository;
+
+    public function __construct(CategoryRepositoryInterface $categoryRepository)
     {
-        $this->repo = $categoryRepo;
+        $this->categoryRepository = $categoryRepository;
     }
-    public function index()
+
+    /**
+     * renders category index view
+     *
+     * @return View|Application|Factory|\Illuminate\Contracts\Foundation\Application
+     * @throws AuthorizationException
+     */
+    public function index(): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
         $this->authorize('manage', Category::class);
-        $categories = $this->repo->all();
+
+        $categories = $this->categoryRepository->all();
+
         return view('Categories::index', compact('categories'));
     }
 
-    public function store(CategoryRequest $request)
+    /**
+     * store new category into categories table
+     *
+     * @param CategoryRequest $request
+     *
+     * @return RedirectResponse
+     * @throws AuthorizationException
+     */
+    public function store(CategoryRequest $request): RedirectResponse
     {
         $this->authorize('manage', Category::class);
-        $this->repo->store($request);
+
+        $this->categoryRepository->create($request->validated());
+
         return back();
     }
 
-    public function edit($categoryId)
+    /**
+     * renders category edit page
+     *
+     * @param $categoryId
+     *
+     * @return View|Application|Factory|\Illuminate\Contracts\Foundation\Application
+     * @throws AuthorizationException
+     */
+    public function edit($categoryId): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
         $this->authorize('manage', Category::class);
-        $category = $this->repo->findById($categoryId);
-        $categories = $this->repo->allExceptById($categoryId);
+
+        $category = $this->categoryRepository->find($categoryId);
+
+        $categories = $this->categoryRepository->allExceptById($categoryId);
+
         return view('Categories::edit', compact('category', 'categories'));
     }
 
-    public function update($categoryId, CategoryRequest $request)
+    /**
+     * updates existing category
+     *
+     * @param                 $categoryId
+     * @param CategoryRequest $request
+     *
+     * @return RedirectResponse
+     * @throws AuthorizationException
+     */
+    public function update($categoryId, CategoryRequest $request): RedirectResponse
     {
         $this->authorize('manage', Category::class);
-        $this->repo->update($categoryId, $request);
+
+        $this->categoryRepository->update($request->validated(), $categoryId);
+
         return back();
     }
 
-    public function destroy($categoryId)
+    /**
+     * deletes category
+     *
+     * @param $categoryId
+     *
+     * @return JsonResponse
+     * @throws AuthorizationException
+     */
+    public function destroy($categoryId): JsonResponse
     {
         $this->authorize('manage', Category::class);
-        $this->repo->delete($categoryId);
+
+        $this->categoryRepository->delete($categoryId);
+
         return AjaxResponses::SuccessResponse();
     }
 }
