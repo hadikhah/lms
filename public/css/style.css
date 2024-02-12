@@ -122,8 +122,10 @@ a, span {
 
 .t-header-logo a {
     height: 44px;
+    width: 100px;
     display: block;
     background: url("../img/weblogo.png") no-repeat;
+    background-size: 75px !important;
 }
 
 .t-header-search {

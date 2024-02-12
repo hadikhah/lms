@@ -171,7 +171,22 @@ return [
             App\Providers\RouteServiceProvider::class,
 
             // modules service providers
-            \Modules\User\Providers\UserServiceProvider::class
+            \Modules\User\Providers\UserServiceProvider::class,
+            \Modules\RolePermissions\Providers\RolePermissionsServiceProvider::class,
+            \Modules\Home\Providers\HomeServiceProvider::class,
+            \Modules\Slider\Providers\SliderServiceProvider::class,
+            \Modules\Common\Providers\CommonServiceProvider::class,
+            \Modules\Media\Providers\MediaServiceProvider::class,
+            \Modules\Dashboard\Providers\DashboardServiceProvider::class,
+            \Modules\Notification\Providers\NotificationServiceProvider::class,
+            \Modules\Ticket\Providers\TicketServiceProvider::class,
+            \Modules\Category\Providers\CategoryServiceProvider::class,
+            \Modules\Comment\Providers\CommentServiceProvider::class,
+            \Modules\Course\Providers\CourseServiceProvider::class,
+            \Modules\Discount\Providers\DiscountServiceProvider::class,
+            \Modules\Payment\Providers\PaymentServiceProvider::class,
+
+
         ]
     )->toArray(),
 
@@ -186,8 +201,9 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
-                                                     // 'Example' => App\Facades\Example::class,
-                                                 ])->toArray(),
+    'aliases' => Facade::defaultAliases()->merge(
+        [
+            // 'Example' => App\Facades\Example::class,
+        ])->toArray(),
 
 ];

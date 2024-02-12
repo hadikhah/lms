@@ -829,10 +829,11 @@ textarea {
 
 .header__logo {
     height: 44px;
-    width: 200px;
+    width: 100px;
+    background-size: 75px !important;
     background: url("../img/weblogo.png") no-repeat;
-    margin-top: -10px;
-    margin-right: 20px;
+    /*margin-top: -10px;*/
+    /*margin-right: 20px;*/
 }
 
 .logout:before {

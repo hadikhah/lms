@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Modules\RolePermissions\Database\Seeds\RolePermissionTableSeeder;
+use Modules\User\Database\Seeds\UsersTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,7 +13,10 @@ class DatabaseSeeder extends Seeder
     /**
      * @var array
      */
-    public static array $seeders = [];
+    public static array $seeders = [
+        RolePermissionTableSeeder::class,
+        UsersTableSeeder::class
+    ];
 
     /**
      * Seed the application's database.
