@@ -12,7 +12,12 @@ class CategoryPolicy
 {
     use HandlesAuthorization;
 
-    public function manage(User $user)
+    /**
+     * @param User $user
+     *
+     * @return bool
+     */
+    public function manage(User $user): bool
     {
         return $user->hasPermissionTo(Permission::PERMISSION_MANAGE_CATEGORIES);
     }
