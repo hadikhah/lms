@@ -112,7 +112,7 @@
                         <input id="course-detial-field-2" name="course-detial-field" type="radio">
                         <label for="course-detial-field-2">خیر</label>
                     </div>
-                    <button class="btn btn-webamooz_net">اضافه کردن</button>
+                    <button class="btn btn-info">اضافه کردن</button>
                 </form>
                 <div class="table__box padding-30">
                     <table class="table">

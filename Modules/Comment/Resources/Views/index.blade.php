@@ -20,7 +20,7 @@
                         <input type="text"  class="text" name="body"  placeholder="قسمتی از متن">
                         <input type="text"  class="text" name="email"  placeholder="ایمیل">
                         <input type="text"  class="text margin-bottom-20" name="name"  placeholder="نام و نام خانوادگی">
-                        <button type="submit" class="btn btn-webamooz_net">جستجو</button>
+                        <button type="submit" class="btn btn-info">جستجو</button>
                     </div>
                 </div>
             </form>

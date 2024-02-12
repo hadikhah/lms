@@ -38,7 +38,7 @@
                         <input type="text"  class="text" name="invoice_id" value="{{ request("invoice_id") }}" placeholder="شماره">
                         <input type="text"  class="text" name="start_date" value="{{ request("start_date") }}" placeholder="از تاریخ : 1399/10/11">
                         <input type="text" class="text margin-bottom-20" name="end_date" value="{{ request("end_date") }}"  placeholder="تا تاریخ : 1399/10/12">
-                        <button type="submit" class="btn btn-webamooz_net" >جستجو</button>
+                        <button type="submit" class="btn btn-info" >جستجو</button>
                     </div>
                 </div>
             </form>

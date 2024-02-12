@@ -28,7 +28,7 @@
                 <x-text-area placeholder="بیو" name="bio" value="{{ auth()->user()->bio }}" />
                 @endcan
                 <br>
-                <button class="btn btn-webamooz_net">بروزرسانی پروفایل</button>
+                <button class="btn btn-info">بروزرسانی پروفایل</button>
             </form>
         </div>
     </div>

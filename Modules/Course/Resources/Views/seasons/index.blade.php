@@ -4,7 +4,7 @@
         @csrf
         <x-input type="text" name="title" placeholder="عنوان سرفصل" class="text" required />
         <x-input type="text" name="number" placeholder="شماره سرفصل" class="text" />
-        <button type="submit" class="btn btn-webamooz_net">اضافه کردن</button>
+        <button type="submit" class="btn btn-info">اضافه کردن</button>
     </form>
     <div class="table__box padding-30">
         <table class="table">

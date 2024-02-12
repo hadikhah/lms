@@ -26,7 +26,7 @@
                         <input type="text"  class="text" value="{{ request()->email }}" name="email"  placeholder="ایمیل">
                         <input type="text"  class="text" value="{{ request()->name }}" name="name"  placeholder="نام و نام خانوادگی">
                         <input type="text"  class="text margin-bottom-20" value="{{ request()->date }}" name="date"  placeholder="تاریخ">
-                        <button type="submit" class="btn btn-webamooz_net" >جستجو</button>
+                        <button type="submit" class="btn btn-info" >جستجو</button>
                     </div>
                 </div>
             </form>

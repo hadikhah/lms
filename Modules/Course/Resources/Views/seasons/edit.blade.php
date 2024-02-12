@@ -13,7 +13,7 @@
                 <x-input type="text" name="title" placeholder="عنوان سرفصل" class="text" value="{{ $season->title }}" required />
                 <x-input type="text" name="number" placeholder="شماره سرفصل" class="text" value="{{ $season->number }}" />
                 <br>
-                <button class="btn btn-webamooz_net">بروزرسانی سرفصل</button>
+                <button class="btn btn-info">بروزرسانی سرفصل</button>
             </form>
         </div>
     </div>

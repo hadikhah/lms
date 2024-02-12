@@ -22,7 +22,7 @@
                             <input type="text" class="text" placeholder="تاریخ">
                             <input type="text" class="text" placeholder="ایمیل">
                             <input type="text" class="text margin-bottom-20" placeholder="نام و نام خانوادگی">
-                            <btutton class="btn btn-webamooz_net">جستجو</btutton>
+                            <btutton class="btn btn-info">جستجو</btutton>
                         </div>
                     </div>
                 </form>

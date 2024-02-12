@@ -26,5 +26,5 @@
     </span>
     @enderror
     <hr>
-    <button class="btn btn-webamooz_net mt-2">اضافه کردن</button>
+    <button class="btn btn-info mt-2">اضافه کردن</button>
 </form>

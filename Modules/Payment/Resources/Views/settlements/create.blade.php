@@ -19,7 +19,7 @@
                 <div class="w-50 padding-20">حداکثر زمان واریز :‌</div>
                 <div class="w-50 bg-fafafa padding-20">۳ روز</div>
             </div>
-            <button type="submit" class="btn btn-webamooz_net">درخواست تسویه</button>
+            <button type="submit" class="btn btn-info">درخواست تسویه</button>
         </form>
     </div>
 @endsection

@@ -402,12 +402,12 @@ textarea {
     cursor: pointer;
 }
 
-.btn-webamooz_net {
+.btn-info {
     background-color: #46b2f0 !important;
     color: #fff;
 }
 
-.btn-webamooz_net:hover {
+.btn-info:hover {
     background-color: #259ee3 !important;
     transition: background-color 200ms;
 }
@@ -505,7 +505,7 @@ textarea {
     color: #e73368 !important;
 }
 
-.webamooz_net_middle {
+.info_middle {
     align-content: center;
     -ms-flex-align: center;
     -webkit-box-align: center;

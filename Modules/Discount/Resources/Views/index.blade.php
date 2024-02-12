@@ -67,7 +67,7 @@
                     <x-input type="text" name="link" placeholder="لینک اطلاعات بیشتر" />
                     <x-input type="text" name="description" placeholder="توضیحات" class="margin-bottom-15" />
 
-                    <button type="submit" class="btn btn-webamooz_net">اضافه کردن</button>
+                    <button type="submit" class="btn btn-info">اضافه کردن</button>
                 </form>
             </div>
         </div>

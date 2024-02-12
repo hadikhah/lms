@@ -46,7 +46,7 @@
             @csrf
             <x-text-area placeholder="متن پاسخ" name="body" class="text" required/>
             <x-file name="attachment" placeholder="آپلود فایل پیویست"/>
-            <button class="btn btn-webamooz_net">ارسال پاسخ</button>
+            <button class="btn btn-info">ارسال پاسخ</button>
         </form>
     </div>
 @endsection

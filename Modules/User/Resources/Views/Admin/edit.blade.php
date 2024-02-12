@@ -34,7 +34,7 @@
                 <x-input type="password" name="password" placeholder="پسورد جدید" value=""  />
                 <x-text-area placeholder="بیو" name="bio" value="{{ $user->bio }}" />
                 <br>
-                <button class="btn btn-webamooz_net">بروزرسانی کاربر</button>
+                <button class="btn btn-info">بروزرسانی کاربر</button>
             </form>
         </div>
     </div>

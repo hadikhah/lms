@@ -9,5 +9,5 @@
         <option value="1" selected>فعال</option>
         <option value="0" >غیرفعال</option>
     </select>
-    <button class="btn btn-webamooz_net">اضافه کردن</button>
+    <button class="btn btn-info">اضافه کردن</button>
 </form>

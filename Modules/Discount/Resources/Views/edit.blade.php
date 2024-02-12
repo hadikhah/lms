@@ -31,7 +31,7 @@
             <x-input type="text" name="link" placeholder="لینک اطلاعات بیشتر" value="{{ $discount->link }}" />
             <x-input type="text" name="description" placeholder="توضیحات" class="margin-bottom-15" value="{{ $discount->description }}"/>
 
-            <button type="submit" class="btn btn-webamooz_net">بروزرسانی</button>
+            <button type="submit" class="btn btn-info">بروزرسانی</button>
         </form>
     </div>
 @endsection

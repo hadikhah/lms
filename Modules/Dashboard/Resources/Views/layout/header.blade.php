@@ -19,7 +19,7 @@
                                 </li>
                             @endforeach
                         </ul>
-                        <a href="{{ route("notifications.markAllAsRead") }}" class="btn btn-webamooz_net font-size-11 " style="color: white !important;">علامت زدن همه به عنوان خوانده شده</a>
+                        <a href="{{ route("notifications.markAllAsRead") }}" class="btn btn-info font-size-11 " style="color: white !important;">علامت زدن همه به عنوان خوانده شده</a>
                     @else
                         <span class="font-size-13">موردی برای نمایش وجود ندارد</span>
                     @endif

@@ -27,7 +27,7 @@
                 <input type="hidden" name="commentable_type" value="{{ get_class($comment->commentable) }}">
                 <input type="hidden" name="commentable_id" value="{{ $comment->commentable->id }}">
                 <x-text-area name="body" placeholder="ارسال نظر..."/>
-                <button type="submit" class="btn btn-webamooz_net">ارسال پاسخ</button>
+                <button type="submit" class="btn btn-info">ارسال پاسخ</button>
             </form>
             @else
                 <p class="text-error">جهت ارسال پاسخ به این دیدگاه لطفا ابتدا آن را تایید کنید.</p>

@@ -24,7 +24,7 @@
                 <div class="w-50 padding-20 w-50">باقی مانده ی حساب :‌</div>
                 <div class="bg-fafafa padding-20 w-50"> {{ number_format($settlement->user->balance) }} تومان</div>
             </div>
-            <button type="submit" class="btn btn-webamooz_net">بروزرسانی</button>
+            <button type="submit" class="btn btn-info">بروزرسانی</button>
         </form>
     </div>
 @endsection
