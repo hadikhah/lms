@@ -47,7 +47,7 @@ class CategorySeeder extends Seeder
                 "categories" => [
                     [
                         "title" => __("user-interface"),
-                        "slug"  => "desgin-user-interface",
+                        "slug"  => "design-user-interface",
                     ]
                 ]
             ],
@@ -91,6 +91,7 @@ class CategorySeeder extends Seeder
             ],
             []
         );
+        // save children categories
         if (array_key_exists('categories', $category)) {
             foreach ($category['categories'] as $subCategory) {
                 $this->create($subCategory, $parent->id);
