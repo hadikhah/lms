@@ -50,7 +50,7 @@
                 </div>
                 <div class="posts">
                     @foreach($user->courses as $courseItem)
-                        @include('Home::layout.singlecourseBox')
+                        @include('Home::layout.singleCourseBox')
                     @endforeach
                 </div>
             </div>
